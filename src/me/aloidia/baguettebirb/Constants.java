@@ -11,10 +11,10 @@ import java.util.Map;
 
 
 public class Constants {
-    public static final String TITLE = "Baguette Birb";
+    public static final String TITLE = "Baguette Birb v1.1";
     public static final int SIZE = 600;
     public static final String HIGHSCORE_FILENAME = "scores.ser";
-    public static final List<String> WALKING_KEYS = Arrays.asList("W", "S", "A", "D");
+    public static final List<String> WALKING_KEYS = Arrays.asList("W", "S", "A", "D", "UP", "DOWN", "LEFT", "RIGHT");
 
     public static final double PIGEON_SIZE = 1.5d;
     public static final double BAGUETTE_SIZE = 1.0d;
@@ -29,7 +29,7 @@ public class Constants {
         put(Baguette.Type.SICKNESS, 1);
         put(Baguette.Type.TIME_BOOST, 1);
         put(Baguette.Type.CLICK_MOVE, 1);
-        put(Baguette.Type.FRENZY, 2);
+        put(Baguette.Type.FRENZY, 1);
         put(Baguette.Type.DECA, 1);
     }};
 
