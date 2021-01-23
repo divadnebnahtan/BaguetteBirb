@@ -131,18 +131,18 @@ public class Main extends Application {
             if (!Collections.disjoint(input, Constants.WALKING_KEYS)) {
                 pigeon.setWalking(true);
             }
-            if (input.contains("A")) {
+            if (input.contains("A") || input.contains("LEFT")) {
                 pigeon.addVel(-Constants.PIGEON_SPEED * pigeon.getSpeedMultiplier(), 0);
                 pigeon.setFacing(true);
             }
-            if (input.contains("D")) {
+            if (input.contains("D") || input.contains("RIGHT")) {
                 pigeon.addVel(Constants.PIGEON_SPEED * pigeon.getSpeedMultiplier(), 0);
                 pigeon.setFacing(false);
             }
-            if (input.contains("W")) {
+            if (input.contains("W") || input.contains("UP")) {
                 pigeon.addVel(0, -Constants.PIGEON_SPEED * pigeon.getSpeedMultiplier());
             }
-            if (input.contains("S")) {
+            if (input.contains("S") || input.contains("DOWN")) {
                 pigeon.addVel(0, Constants.PIGEON_SPEED * pigeon.getSpeedMultiplier());
             }
         }
